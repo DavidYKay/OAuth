@@ -28,7 +28,6 @@
 		267A13661355BC37004C03F2 /* OAuthTestGuiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A13651355BC37004C03F2 /* OAuthTestGuiAppDelegate.m */; };
 		267A13691355BC37004C03F2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 267A13671355BC37004C03F2 /* MainMenu.xib */; };
 		267A137A1355BDC7004C03F2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267A13791355BDC7004C03F2 /* WebKit.framework */; };
-		26A5CC831355E2290077E65B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267A13521355BC37004C03F2 /* Cocoa.framework */; };
 		26A5CC921355E2960077E65B /* OAuthMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A133B1355718A004C03F2 /* OAuthMutableURLRequest.m */; };
 		26A5CC931355E2960077E65B /* OAuthMultiDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A133E1355765F004C03F2 /* OAuthMultiDictionary.m */; };
 		26A5CC941355E2960077E65B /* OAuthHandshake.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A13471355BB72004C03F2 /* OAuthHandshake.m */; };
@@ -56,6 +55,7 @@
 		26A5CCBA1355E4B60077E65B /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A134113557A35004C03F2 /* NSString+URLEncoding.m */; };
 		26A5CCBB1355E4B60077E65B /* NSURLConnection+AsyncBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 267A13491355BBDD004C03F2 /* NSURLConnection+AsyncBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26A5CCBC1355E4B60077E65B /* NSURLConnection+AsyncBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A134A1355BBDD004C03F2 /* NSURLConnection+AsyncBlock.m */; };
+		26DBAF96135612C7000B1786 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DBAF95135612C7000B1786 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +132,7 @@
 		26A5CC8A1355E2290077E65B /* OAuth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OAuth-Info.plist"; sourceTree = "<group>"; };
 		26A5CC8E1355E22A0077E65B /* OAuth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OAuth-Prefix.pch"; sourceTree = "<group>"; };
 		26A5CCA91355E46B0077E65B /* libOAuth-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libOAuth-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26DBAF95135612C7000B1786 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26A5CC831355E2290077E65B /* Cocoa.framework in Frameworks */,
+				26DBAF96135612C7000B1786 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +187,7 @@
 		267A132C13557162004C03F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26DBAF95135612C7000B1786 /* Foundation.framework */,
 				26A5CC821355E2290077E65B /* OAuth.framework */,
 				267A13551355BC37004C03F2 /* AppKit.framework */,
 				267A13571355BC37004C03F2 /* Foundation.framework */,
