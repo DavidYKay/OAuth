@@ -74,6 +74,7 @@
     if (list == nil) {
         list = [objects mutableCopy];
         [storage setObject: list forKey: key];
+        [list release];
     } else {
         [list addObjectsFromArray: objects];
     }
