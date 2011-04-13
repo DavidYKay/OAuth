@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		26A5CCBD1355E5890077E65B /* Build All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 26A5CCBE1355E5890077E65B /* Build configuration list for PBXAggregateTarget "Build All" */;
+			buildPhases = (
+			);
+			dependencies = (
+				26A5CCC21355E5950077E65B /* PBXTargetDependency */,
+				26A5CCC41355E5950077E65B /* PBXTargetDependency */,
+				26A5CCC61355E5950077E65B /* PBXTargetDependency */,
+			);
+			name = "Build All";
+			productName = "Build All";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		267A13531355BC37004C03F2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267A13521355BC37004C03F2 /* Cocoa.framework */; };
+		267A13601355BC37004C03F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A135F1355BC37004C03F2 /* main.m */; };
+		267A13661355BC37004C03F2 /* OAuthTestGuiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A13651355BC37004C03F2 /* OAuthTestGuiAppDelegate.m */; };
+		267A13691355BC37004C03F2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 267A13671355BC37004C03F2 /* MainMenu.xib */; };
+		267A137A1355BDC7004C03F2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267A13791355BDC7004C03F2 /* WebKit.framework */; };
+		26A5CC831355E2290077E65B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267A13521355BC37004C03F2 /* Cocoa.framework */; };
+		26A5CC921355E2960077E65B /* OAuthMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A133B1355718A004C03F2 /* OAuthMutableURLRequest.m */; };
+		26A5CC931355E2960077E65B /* OAuthMultiDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A133E1355765F004C03F2 /* OAuthMultiDictionary.m */; };
+		26A5CC941355E2960077E65B /* OAuthHandshake.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A13471355BB72004C03F2 /* OAuthHandshake.m */; };
+		26A5CC951355E2960077E65B /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A134413558F4E004C03F2 /* NSData+Base64.m */; };
+		26A5CC961355E2960077E65B /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A134113557A35004C03F2 /* NSString+URLEncoding.m */; };
+		26A5CC971355E2960077E65B /* NSURLConnection+AsyncBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A134A1355BBDD004C03F2 /* NSURLConnection+AsyncBlock.m */; };
+		26A5CC981355E2A60077E65B /* OAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A5CC821355E2290077E65B /* OAuth.framework */; };
+		26A5CC9E1355E3270077E65B /* OAuth.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 26A5CC821355E2290077E65B /* OAuth.framework */; };
+		26A5CC9F1355E3510077E65B /* OAuthMutableURLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 267A133A1355718A004C03F2 /* OAuthMutableURLRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26A5CCA01355E3510077E65B /* OAuthMultiDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 267A133D1355765F004C03F2 /* OAuthMultiDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26A5CCA11355E3510077E65B /* OAuthHandshake.h in Headers */ = {isa = PBXBuildFile; fileRef = 267A13461355BB72004C03F2 /* OAuthHandshake.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26A5CCA21355E3590077E65B /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 267A134313558F4E004C03F2 /* NSData+Base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26A5CCA31355E3590077E65B /* NSString+URLEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 267A134013557A35004C03F2 /* NSString+URLEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26A5CCA41355E3590077E65B /* NSURLConnection+AsyncBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 267A13491355BBDD004C03F2 /* NSURLConnection+AsyncBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26A5CCAA1355E46B0077E65B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267A13571355BC37004C03F2 /* Foundation.framework */; };
+		26A5CCB11355E4B60077E65B /* OAuthMutableURLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 267A133A1355718A004C03F2 /* OAuthMutableURLRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26A5CCB21355E4B60077E65B /* OAuthMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A133B1355718A004C03F2 /* OAuthMutableURLRequest.m */; };
+		26A5CCB31355E4B60077E65B /* OAuthMultiDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 267A133D1355765F004C03F2 /* OAuthMultiDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26A5CCB41355E4B60077E65B /* OAuthMultiDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A133E1355765F004C03F2 /* OAuthMultiDictionary.m */; };
+		26A5CCB51355E4B60077E65B /* OAuthHandshake.h in Headers */ = {isa = PBXBuildFile; fileRef = 267A13461355BB72004C03F2 /* OAuthHandshake.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26A5CCB61355E4B60077E65B /* OAuthHandshake.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A13471355BB72004C03F2 /* OAuthHandshake.m */; };
+		26A5CCB71355E4B60077E65B /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 267A134313558F4E004C03F2 /* NSData+Base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26A5CCB81355E4B60077E65B /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A134413558F4E004C03F2 /* NSData+Base64.m */; };
+		26A5CCB91355E4B60077E65B /* NSString+URLEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 267A134013557A35004C03F2 /* NSString+URLEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26A5CCBA1355E4B60077E65B /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A134113557A35004C03F2 /* NSString+URLEncoding.m */; };
+		26A5CCBB1355E4B60077E65B /* NSURLConnection+AsyncBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 267A13491355BBDD004C03F2 /* NSURLConnection+AsyncBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26A5CCBC1355E4B60077E65B /* NSURLConnection+AsyncBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 267A134A1355BBDD004C03F2 /* NSURLConnection+AsyncBlock.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26A5CC991355E2D40077E65B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 267A132013557162004C03F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26A5CC811355E2290077E65B;
+			remoteInfo = OAuth;
+		};
+		26A5CCC11355E5950077E65B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 267A132013557162004C03F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 267A134F1355BC37004C03F2;
+			remoteInfo = OAuthExample;
+		};
+		26A5CCC31355E5950077E65B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 267A132013557162004C03F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26A5CC811355E2290077E65B;
+			remoteInfo = OAuth;
+		};
+		26A5CCC51355E5950077E65B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 267A132013557162004C03F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26A5CCA81355E46B0077E65B;
+			remoteInfo = "OAuth-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		26A5CC9B1355E2FC0077E65B /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				26A5CC9E1355E3270077E65B /* OAuth.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		267A132D13557162004C03F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		267A133A1355718A004C03F2 /* OAuthMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthMutableURLRequest.h; sourceTree = "<group>"; };
+		267A133B1355718A004C03F2 /* OAuthMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthMutableURLRequest.m; sourceTree = "<group>"; };
+		267A133D1355765F004C03F2 /* OAuthMultiDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthMultiDictionary.h; sourceTree = "<group>"; };
+		267A133E1355765F004C03F2 /* OAuthMultiDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthMultiDictionary.m; sourceTree = "<group>"; };
+		267A134013557A35004C03F2 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		267A134113557A35004C03F2 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		267A134313558F4E004C03F2 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		267A134413558F4E004C03F2 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		267A13461355BB72004C03F2 /* OAuthHandshake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthHandshake.h; sourceTree = "<group>"; };
+		267A13471355BB72004C03F2 /* OAuthHandshake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthHandshake.m; sourceTree = "<group>"; };
+		267A13491355BBDD004C03F2 /* NSURLConnection+AsyncBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+AsyncBlock.h"; sourceTree = "<group>"; };
+		267A134A1355BBDD004C03F2 /* NSURLConnection+AsyncBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+AsyncBlock.m"; sourceTree = "<group>"; };
+		267A13501355BC37004C03F2 /* OAuthExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OAuthExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		267A13521355BC37004C03F2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		267A13551355BC37004C03F2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		267A13571355BC37004C03F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		267A135A1355BC37004C03F2 /* Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Example-Info.plist"; sourceTree = "<group>"; };
+		267A135E1355BC37004C03F2 /* Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Prefix.pch"; sourceTree = "<group>"; };
+		267A135F1355BC37004C03F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		267A13641355BC37004C03F2 /* OAuthTestGuiAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAuthTestGuiAppDelegate.h; sourceTree = "<group>"; };
+		267A13651355BC37004C03F2 /* OAuthTestGuiAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OAuthTestGuiAppDelegate.m; sourceTree = "<group>"; };
+		267A13681355BC37004C03F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		267A13791355BDC7004C03F2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		26A5CC821355E2290077E65B /* OAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26A5CC8A1355E2290077E65B /* OAuth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OAuth-Info.plist"; sourceTree = "<group>"; };
+		26A5CC8E1355E22A0077E65B /* OAuth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OAuth-Prefix.pch"; sourceTree = "<group>"; };
+		26A5CCA91355E46B0077E65B /* libOAuth-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libOAuth-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		267A134D1355BC37004C03F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26A5CC981355E2A60077E65B /* OAuth.framework in Frameworks */,
+				267A137A1355BDC7004C03F2 /* WebKit.framework in Frameworks */,
+				267A13531355BC37004C03F2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26A5CC7E1355E2290077E65B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26A5CC831355E2290077E65B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26A5CCA61355E46B0077E65B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26A5CCAA1355E46B0077E65B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		267A131E13557162004C03F2 = {
+			isa = PBXGroup;
+			children = (
+				267A132F13557162004C03F2 /* OAuth */,
+				267A13581355BC37004C03F2 /* Example App */,
+				267A132C13557162004C03F2 /* Frameworks */,
+				267A132A13557162004C03F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		267A132A13557162004C03F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				267A13501355BC37004C03F2 /* OAuthExample.app */,
+				26A5CCA91355E46B0077E65B /* libOAuth-iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		267A132C13557162004C03F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26A5CC821355E2290077E65B /* OAuth.framework */,
+				267A13551355BC37004C03F2 /* AppKit.framework */,
+				267A13571355BC37004C03F2 /* Foundation.framework */,
+				267A13791355BDC7004C03F2 /* WebKit.framework */,
+				267A132D13557162004C03F2 /* Foundation.framework */,
+				267A13521355BC37004C03F2 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		267A132F13557162004C03F2 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				267A133A1355718A004C03F2 /* OAuthMutableURLRequest.h */,
+				267A133B1355718A004C03F2 /* OAuthMutableURLRequest.m */,
+				267A133D1355765F004C03F2 /* OAuthMultiDictionary.h */,
+				267A133E1355765F004C03F2 /* OAuthMultiDictionary.m */,
+				267A13461355BB72004C03F2 /* OAuthHandshake.h */,
+				267A13471355BB72004C03F2 /* OAuthHandshake.m */,
+				26A5CC7B1355E1EF0077E65B /* Categories */,
+				26A5CC891355E2290077E65B /* Supporting Files */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		267A13581355BC37004C03F2 /* Example App */ = {
+			isa = PBXGroup;
+			children = (
+				267A13641355BC37004C03F2 /* OAuthTestGuiAppDelegate.h */,
+				267A13651355BC37004C03F2 /* OAuthTestGuiAppDelegate.m */,
+				267A13671355BC37004C03F2 /* MainMenu.xib */,
+				267A13591355BC37004C03F2 /* Supporting Files */,
+			);
+			name = "Example App";
+			path = Example;
+			sourceTree = "<group>";
+		};
+		267A13591355BC37004C03F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				267A135A1355BC37004C03F2 /* Example-Info.plist */,
+				267A135E1355BC37004C03F2 /* Example-Prefix.pch */,
+				267A135F1355BC37004C03F2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26A5CC7B1355E1EF0077E65B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				267A134313558F4E004C03F2 /* NSData+Base64.h */,
+				267A134413558F4E004C03F2 /* NSData+Base64.m */,
+				267A134013557A35004C03F2 /* NSString+URLEncoding.h */,
+				267A134113557A35004C03F2 /* NSString+URLEncoding.m */,
+				267A13491355BBDD004C03F2 /* NSURLConnection+AsyncBlock.h */,
+				267A134A1355BBDD004C03F2 /* NSURLConnection+AsyncBlock.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		26A5CC891355E2290077E65B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				26A5CC8A1355E2290077E65B /* OAuth-Info.plist */,
+				26A5CC8E1355E22A0077E65B /* OAuth-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		26A5CC7F1355E2290077E65B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26A5CC9F1355E3510077E65B /* OAuthMutableURLRequest.h in Headers */,
+				26A5CCA01355E3510077E65B /* OAuthMultiDictionary.h in Headers */,
+				26A5CCA11355E3510077E65B /* OAuthHandshake.h in Headers */,
+				26A5CCA21355E3590077E65B /* NSData+Base64.h in Headers */,
+				26A5CCA31355E3590077E65B /* NSString+URLEncoding.h in Headers */,
+				26A5CCA41355E3590077E65B /* NSURLConnection+AsyncBlock.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26A5CCA71355E46B0077E65B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26A5CCB11355E4B60077E65B /* OAuthMutableURLRequest.h in Headers */,
+				26A5CCB31355E4B60077E65B /* OAuthMultiDictionary.h in Headers */,
+				26A5CCB51355E4B60077E65B /* OAuthHandshake.h in Headers */,
+				26A5CCB71355E4B60077E65B /* NSData+Base64.h in Headers */,
+				26A5CCB91355E4B60077E65B /* NSString+URLEncoding.h in Headers */,
+				26A5CCBB1355E4B60077E65B /* NSURLConnection+AsyncBlock.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		267A134F1355BC37004C03F2 /* OAuthExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 267A136A1355BC37004C03F2 /* Build configuration list for PBXNativeTarget "OAuthExample" */;
+			buildPhases = (
+				267A134C1355BC37004C03F2 /* Sources */,
+				267A134D1355BC37004C03F2 /* Frameworks */,
+				267A134E1355BC37004C03F2 /* Resources */,
+				26A5CC9B1355E2FC0077E65B /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26A5CC9A1355E2D40077E65B /* PBXTargetDependency */,
+			);
+			name = OAuthExample;
+			productName = OAuthTestGui;
+			productReference = 267A13501355BC37004C03F2 /* OAuthExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26A5CC811355E2290077E65B /* OAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26A5CC8F1355E22A0077E65B /* Build configuration list for PBXNativeTarget "OAuth" */;
+			buildPhases = (
+				26A5CC7D1355E2290077E65B /* Sources */,
+				26A5CC7E1355E2290077E65B /* Frameworks */,
+				26A5CC7F1355E2290077E65B /* Headers */,
+				26A5CC801355E2290077E65B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OAuth;
+			productName = OAuth;
+			productReference = 26A5CC821355E2290077E65B /* OAuth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		26A5CCA81355E46B0077E65B /* OAuth-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26A5CCAE1355E46B0077E65B /* Build configuration list for PBXNativeTarget "OAuth-iOS" */;
+			buildPhases = (
+				26A5CCA51355E46B0077E65B /* Sources */,
+				26A5CCA61355E46B0077E65B /* Frameworks */,
+				26A5CCA71355E46B0077E65B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OAuth-iOS";
+			productName = "OAuth-iOS";
+			productReference = 26A5CCA91355E46B0077E65B /* libOAuth-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		267A132013557162004C03F2 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 267A132313557162004C03F2 /* Build configuration list for PBXProject "OAuth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 267A131E13557162004C03F2;
+			productRefGroup = 267A132A13557162004C03F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26A5CCBD1355E5890077E65B /* Build All */,
+				26A5CC811355E2290077E65B /* OAuth */,
+				26A5CCA81355E46B0077E65B /* OAuth-iOS */,
+				267A134F1355BC37004C03F2 /* OAuthExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		267A134E1355BC37004C03F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				267A13691355BC37004C03F2 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26A5CC801355E2290077E65B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		267A134C1355BC37004C03F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				267A13601355BC37004C03F2 /* main.m in Sources */,
+				267A13661355BC37004C03F2 /* OAuthTestGuiAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26A5CC7D1355E2290077E65B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26A5CC921355E2960077E65B /* OAuthMutableURLRequest.m in Sources */,
+				26A5CC931355E2960077E65B /* OAuthMultiDictionary.m in Sources */,
+				26A5CC941355E2960077E65B /* OAuthHandshake.m in Sources */,
+				26A5CC951355E2960077E65B /* NSData+Base64.m in Sources */,
+				26A5CC961355E2960077E65B /* NSString+URLEncoding.m in Sources */,
+				26A5CC971355E2960077E65B /* NSURLConnection+AsyncBlock.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26A5CCA51355E46B0077E65B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26A5CCB21355E4B60077E65B /* OAuthMutableURLRequest.m in Sources */,
+				26A5CCB41355E4B60077E65B /* OAuthMultiDictionary.m in Sources */,
+				26A5CCB61355E4B60077E65B /* OAuthHandshake.m in Sources */,
+				26A5CCB81355E4B60077E65B /* NSData+Base64.m in Sources */,
+				26A5CCBA1355E4B60077E65B /* NSString+URLEncoding.m in Sources */,
+				26A5CCBC1355E4B60077E65B /* NSURLConnection+AsyncBlock.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26A5CC9A1355E2D40077E65B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26A5CC811355E2290077E65B /* OAuth */;
+			targetProxy = 26A5CC991355E2D40077E65B /* PBXContainerItemProxy */;
+		};
+		26A5CCC21355E5950077E65B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 267A134F1355BC37004C03F2 /* OAuthExample */;
+			targetProxy = 26A5CCC11355E5950077E65B /* PBXContainerItemProxy */;
+		};
+		26A5CCC41355E5950077E65B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26A5CC811355E2290077E65B /* OAuth */;
+			targetProxy = 26A5CCC31355E5950077E65B /* PBXContainerItemProxy */;
+		};
+		26A5CCC61355E5950077E65B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26A5CCA81355E46B0077E65B /* OAuth-iOS */;
+			targetProxy = 26A5CCC51355E5950077E65B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		267A13671355BC37004C03F2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				267A13681355BC37004C03F2 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		267A133513557162004C03F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		267A133613557162004C03F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		267A136B1355BC37004C03F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
+				INFOPLIST_FILE = "Example/Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		267A136C1355BC37004C03F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
+				INFOPLIST_FILE = "Example/Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		26A5CC901355E22A0077E65B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OAuth/OAuth-Prefix.pch";
+				INFOPLIST_FILE = "OAuth/OAuth-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		26A5CC911355E22A0077E65B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OAuth/OAuth-Prefix.pch";
+				INFOPLIST_FILE = "OAuth/OAuth-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		26A5CCAF1355E46B0077E65B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/OAuth_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OAuth/OAuth-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		26A5CCB01355E46B0077E65B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/OAuth_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OAuth/OAuth-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		26A5CCBF1355E5890077E65B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		26A5CCC01355E5890077E65B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		267A132313557162004C03F2 /* Build configuration list for PBXProject "OAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				267A133513557162004C03F2 /* Debug */,
+				267A133613557162004C03F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		267A136A1355BC37004C03F2 /* Build configuration list for PBXNativeTarget "OAuthExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				267A136B1355BC37004C03F2 /* Debug */,
+				267A136C1355BC37004C03F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26A5CC8F1355E22A0077E65B /* Build configuration list for PBXNativeTarget "OAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26A5CC901355E22A0077E65B /* Debug */,
+				26A5CC911355E22A0077E65B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26A5CCAE1355E46B0077E65B /* Build configuration list for PBXNativeTarget "OAuth-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26A5CCAF1355E46B0077E65B /* Debug */,
+				26A5CCB01355E46B0077E65B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26A5CCBE1355E5890077E65B /* Build configuration list for PBXAggregateTarget "Build All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26A5CCBF1355E5890077E65B /* Debug */,
+				26A5CCC01355E5890077E65B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 267A132013557162004C03F2 /* Project object */;
+}
