@@ -13,7 +13,7 @@
 @class OAuthHandshake;
 @class WebView;
 
-@interface OAuthTestGuiAppDelegate : NSObject <NSApplicationDelegate> {
+@interface OAuthTestGuiAppDelegate : NSObject  {
 @private
     NSWindow *window;
     WebView *webView;
