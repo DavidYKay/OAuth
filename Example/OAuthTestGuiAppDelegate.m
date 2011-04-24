@@ -56,6 +56,12 @@
     [handshake beginHandshake];
 }
 
+- (void)receivedPostTweetResponse: (NSURLResponse *) resp data: (NSData *)data error: (NSError *)error forRequest: (NSURLRequest *)request;
+{
+	NSString *string = [[[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding] autorelease];
+	NSLog( @"sent tweet, reply: %@", string );
+}
+
 - (IBAction)postTweet:(id)sender 
 {
     if (![handshake isAuthenticated]) return;
@@ -69,11 +75,8 @@
     [req setHTTPBody: [message dataUsingEncoding: NSASCIIStringEncoding]];
     [req setValue: @"application/x-www-form-urlencoded" forHTTPHeaderField: @"content-type"];
     [req sign];
-    
-    [NSURLConnection sendAsyncRequest: req withBlock: ^( NSData *data, NSURLResponse *resp, NSError *error ) {
-        NSString *string = [[[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding] autorelease];
-        NSLog( @"sent tweet, reply: %@", string );
-    }];
+	
+	[NSURLConnection sendAsyncRequest: req delegate: self completionSelector: @selector(receivedPostTweetResponse:data:error:forRequest:)];
 }
 
 - (void)webView:(WebView *)webView decidePolicyForNavigationAction:(NSDictionary *)actionInformation request:(NSURLRequest *)request frame:(WebFrame *)frame decisionListener:(id<WebPolicyDecisionListener>)listener;
