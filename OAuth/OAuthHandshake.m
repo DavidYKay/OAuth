@@ -48,6 +48,20 @@
     return request;
 }
 
+- (void)receivedBeginHandshakeResponse: (NSURLResponse *) resp data: (NSData *)data error: (NSError *)error forRequest: (NSURLRequest *)request;
+{
+	if (data == nil) {
+		[self _sendError: error];
+		return;
+	}
+	
+	OAuthMultiDictionary *dict = [OAuthMultiDictionary dictionaryWithQueryString: [[[NSString alloc] initWithData: data encoding: NSASCIIStringEncoding] autorelease]];
+	[self setToken: [dict objectForKey: @"oauth_token"]];
+	[self setTokenSecret: [dict objectForKey: @"oauth_token_secret"]];
+	
+	[delegate handshake: self requestsUserToAuthenticateToken: token];
+}
+
 - (void) beginHandshake;
 {
     [self setAuthenticated: NO];
@@ -58,18 +72,24 @@
     if (callbackURL != nil) [request setValue: callbackURL forOAuthParameter: @"oauth_callback"];
     [request sign];
     
-    [NSURLConnection sendAsyncRequest: request withBlock: ^( NSData *data, NSURLResponse *response, NSError *error ) {
-        if (data == nil) {
-            [self _sendError: error];
-            return;
-        }
-        
-        OAuthMultiDictionary *dict = [OAuthMultiDictionary dictionaryWithQueryString: [[[NSString alloc] initWithData: data encoding: NSASCIIStringEncoding] autorelease]];
-        [self setToken: [dict objectForKey: @"oauth_token"]];
-        [self setTokenSecret: [dict objectForKey: @"oauth_token_secret"]];
-        
-        [delegate handshake: self requestsUserToAuthenticateToken: token];
-    }];
+    [NSURLConnection sendAsyncRequest: request delegate: self completionSelector: @selector(receivedBeginHandshakeResponse:data:error:forRequest:)];
+}
+
+- (void)receivedContinueHandshakeResponse: (NSURLResponse *) resp data: (NSData *)data error: (NSError *)error forRequest: (NSURLRequest *)request;
+{
+	if (data == nil) {
+		[self _sendError: error];
+		return;
+	}
+	
+	OAuthMultiDictionary *dict = [OAuthMultiDictionary dictionaryWithQueryString: [[[NSString alloc] initWithData: data encoding: NSASCIIStringEncoding] autorelease]];
+	[self setToken: [dict objectForKey: @"oauth_token"]];
+	[self setTokenSecret: [dict objectForKey: @"oauth_token_secret"]];
+	
+	[self setAuthenticated: YES];
+	if ([delegate respondsToSelector: @selector( handshake:authenticatedToken:withSecret: )]) {
+		[delegate handshake: self authenticatedToken: token withSecret: tokenSecret];            
+	}
 }
 
 - (void) continueHandshakeWithVerifier: (NSString *) verifier;
@@ -78,21 +98,7 @@
     [request setValue: verifier forOAuthParameter: @"oauth_verifier"];
     [request sign];
     
-    [NSURLConnection sendAsyncRequest: request withBlock: ^( NSData *data, NSURLResponse *response, NSError *error ) {
-        if (data == nil) {
-            [self _sendError: error];
-            return;
-        }
-        
-        OAuthMultiDictionary *dict = [OAuthMultiDictionary dictionaryWithQueryString: [[[NSString alloc] initWithData: data encoding: NSASCIIStringEncoding] autorelease]];
-        [self setToken: [dict objectForKey: @"oauth_token"]];
-        [self setTokenSecret: [dict objectForKey: @"oauth_token_secret"]];
-        
-        [self setAuthenticated: YES];
-        if ([delegate respondsToSelector: @selector( handshake:authenticatedToken:withSecret: )]) {
-            [delegate handshake: self authenticatedToken: token withSecret: tokenSecret];            
-        }
-    }];
+    [NSURLConnection sendAsyncRequest: request delegate: self completionSelector: @selector(receivedContinueHandshakeResponse:data:error:forRequest:)];
 }
 
 @end
