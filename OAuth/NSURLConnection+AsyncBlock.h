@@ -12,5 +12,11 @@
 
 
 @interface NSURLConnection (AsyncBlock)
+
+#if defined( NS_BLOCKS_AVAILABLE )
 + (void) sendAsyncRequest: (NSURLRequest *) request withBlock: (void (^)( NSData *data, NSURLResponse *resp, NSError *error )) block;
+#endif 
+
++ (void) sendAsyncRequest: (NSURLRequest *) request delegate: (id)delegate  completionSelector: (SEL)selector;
+
 @end
