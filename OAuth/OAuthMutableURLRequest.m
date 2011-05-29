@@ -68,7 +68,7 @@ static inline NSData *HMAC_SHA1( NSData *key, NSData *value )
     [self setValue: nonce forOAuthParameter: @"oauth_nonce"];
 
     unsigned long time = (unsigned long)[[NSDate date] timeIntervalSince1970];
-    [self setValue: [NSString stringWithFormat: @"%ul", time] forOAuthParameter: @"oauth_timestamp"];
+    [self setValue: [NSString stringWithFormat: @"%lu", time] forOAuthParameter: @"oauth_timestamp"];
 
     [self setValue: @"HMAC-SHA1" forOAuthParameter: @"oauth_signature_method"];
 
