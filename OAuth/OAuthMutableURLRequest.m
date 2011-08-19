@@ -119,12 +119,7 @@ static inline NSData *HMAC_SHA1( NSData *key, NSData *value )
     NSString *tokenKey  = oauthTokenSecret;
     if (tokenKey == nil) tokenKey = @"";
 
-    NSData *key = [[NSString stringWithFormat: @"%@&%@", oauthConsumerSecret, tokenKey] dataUsingEncoding: NSASCIIStringEncoding];
-    NSData *baseString = [[self signatureBaseString] dataUsingEncoding: NSASCIIStringEncoding];
-
-    //NSString *signature = [HMAC_SHA1( key,  baseString ) base64EncodingWithLineLength: 0];
-
-    //"#{escape(consumer_secret)}&#{escape(token_secret)}"
+    //From the ruby oAuth library: "#{escape(consumer_secret)}&#{escape(token_secret)}"
     NSString *signature = [NSString stringWithFormat: @"%@&%@",
       oauthConsumerSecret,
       oauthTokenSecret];
